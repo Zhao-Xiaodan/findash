@@ -1,7 +1,9 @@
+import { WatchlistSection } from '@/components/WatchlistSection'
+
 export default function Home() {
   return (
     <div>
-      <p className="text-gray-500 text-sm">Dashboard loading...</p>
+      <WatchlistSection />
     </div>
   )
 }
