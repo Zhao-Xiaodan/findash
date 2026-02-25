@@ -3,15 +3,12 @@ import { render, screen } from '@testing-library/react'
 import { MacroChart } from './MacroChart'
 
 vi.mock('recharts', () => ({
-  AreaChart: ({ children }: any) => <div>{children}</div>,
+  AreaChart: () => null,
   Area: () => null,
   XAxis: () => null,
   YAxis: () => null,
   Tooltip: () => null,
-  ResponsiveContainer: ({ children }: any) => <div>{children}</div>,
-  defs: () => null,
-  linearGradient: () => null,
-  stop: () => null,
+  ResponsiveContainer: ({ children }: { children: React.ReactNode }) => <div>{children}</div>,
 }))
 
 const mockData = [
