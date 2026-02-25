@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import { NextRequest, NextResponse } from 'next/server'
 import { buildFredUrl, parseObservations } from '@/lib/fred'
 import { createCache } from '@/lib/cache'
