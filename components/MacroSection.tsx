@@ -6,7 +6,7 @@ const MACRO_SERIES = [
   { series: 'BAMLH0A0HYM2', color: '#ef4444' },
   { series: 'CORESTICKM159SFRBATL', color: '#8b5cf6' },
   { series: 'PERMIT', color: '#3b82f6' },
-  { series: 'CAPE', color: '#f59e0b' },
+  { series: 'T10Y2Y', color: '#f59e0b' },
 ]
 
 function MacroChartLoader({ series, color }: { series: string; color: string }) {

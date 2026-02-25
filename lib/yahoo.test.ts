@@ -21,8 +21,8 @@ describe('formatQuote', () => {
   it('calculates 5D and 20D from history', () => {
     const raw = { symbol: 'SPY', regularMarketPrice: 100, regularMarketChangePercent: 1 }
     // Build 21 days of history: starts at 80, ends at 100
-    const history = Array.from({ length: 21 }, (_, i) => ({ close: 80 + i }))
-    const result = formatQuote(raw as any, history)
+    const closes = Array.from({ length: 21 }, (_, i) => 80 + i)
+    const result = formatQuote(raw as any, closes)
     // 5D: (100 - 95) / 95 * 100
     expect(result.changePercent5D).toBeCloseTo(5.26, 1)
     // 20D: (100 - 80) / 80 * 100

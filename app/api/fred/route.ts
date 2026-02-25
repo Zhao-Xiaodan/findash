@@ -12,7 +12,7 @@ const SERIES: Record<string, { label: string; unit: string }> = {
   'BAMLC0A0CM':             { label: 'IG Credit Spread', unit: '%' },
   'PERMIT':                  { label: 'Housing Permits', unit: 'K' },
   'CORESTICKM159SFRBATL':   { label: 'Sticky CPI', unit: '%' },
-  'CAPE':                    { label: 'Shiller CAPE', unit: 'x' },
+  'T10Y2Y':                  { label: 'Yield Curve (10Y-2Y)', unit: '%' },
 }
 
 export async function GET(req: NextRequest) {
